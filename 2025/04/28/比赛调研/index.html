@@ -13,7 +13,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/archives/"/>
+    <link rel="canonical" href="http://example.com/2025/04/28/比赛调研/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -22,14 +22,17 @@
     
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CVPR相关比赛调研">
+<meta property="og:url" content="http://example.com/2025/04/28/%E6%AF%94%E8%B5%9B%E8%B0%83%E7%A0%94/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
+<meta property="article:published_time" content="2025-04-28T15:08:04.000Z">
+<meta property="article:modified_time" content="2025-04-29T07:55:14.549Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="cvpr">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/redefine-og.webp">
     
@@ -43,7 +46,7 @@
     
     <title>
         
-            Archive | Skywalker&#39;s Blog
+            CVPR相关比赛调研 | Skywalker&#39;s Blog
         
     </title>
 
@@ -102,7 +105,119 @@
     
     
     
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 
@@ -164,7 +279,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/archives"
                                         >
                                     <i class="fa-regular fa-archive fa-fw"></i>
@@ -287,7 +402,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/archives"
                         >
                             <span>
@@ -398,57 +513,322 @@
 			
 
 			<div class="main-content">
-				<div class="archive-container shadow-none hover:shadow-none sm:shadow-redefine sm:hover:shadow-redefine-hover">
-	
-<div class="archive-list-container">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			
+			
+			<img src="https://evan.beee.top/img/2023/01/21/5966cf4d2f2c05aecad54e233d9562ff.png" alt="CVPR相关比赛调研" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">CVPR相关比赛调研</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/tx.jpg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">Skywalker</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2025-04-28 23:08:04</span>
+        <span class="mobile">2025-04-28 23:08:04</span>
+        <span class="hover-info">Created</span>
+    </span>
     
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2025</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">3</span>
-            </div>
-            
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2025-04-29 15:55:14</span>
+            <span class="mobile">2025-04-29 15:55:14</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
                 
-                    
-                    
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='04-28'>
-                    
-                    <a href="/2025/04/28/%E6%AF%94%E8%B5%9B%E8%B0%83%E7%A0%94/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">CVPR相关比赛调研</span>
-                    </a>
-                    
                 
-                    
                     
                         
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='04-26'>
+                        <li>
+                            <a href="/categories/cvpr/">cvpr</a>&nbsp;
+                        </li>
                     
-                    <a href="/2025/04/26/AN-IMAGE-IS-WORTH-16X16-WORDS/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">精读——AN IMAGE IS WORTH 16X16 WORDS:TRANSFORMERS FOR IMAGE RECOGNITION ATSCALE</span>
-                    </a>
                     
                 
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='04-24'>
-                    
-                    <a href="/2025/04/24/%E3%80%8ADeep-Residual-Learning-for-Image-Recognition%E3%80%8B%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">精读——Deep Residual Learning for Image Recognition</span>
-                    </a>
-                    
-                
-                </li> <!-- Ensure the last item is properly closed -->
             </ul>
-        </section>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/cvpr/">cvpr</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.1k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>5 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h1 id="Ego4d"><a href="#Ego4d" class="headerlink" title="Ego4d"></a>Ego4d</h1><h2 id="Episodic-memory（情景记忆）"><a href="#Episodic-memory（情景记忆）" class="headerlink" title="Episodic memory（情景记忆）"></a>Episodic memory（情景记忆）</h2><h3 id="Moments-queries-MQ"><a href="#Moments-queries-MQ" class="headerlink" title="Moments queries (MQ)"></a>Moments queries (MQ)</h3><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">比赛基本信息</a></li><li class="tab"><a class="#first-unique-name-2">BaseLine代码链接</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><blockquote>
+<p><strong>比赛链接</strong></p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://eval.ai/web/challenges/challenge-page/1626/overview">https://eval.ai/web/challenges/challenge-page/1626/overview<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p><strong>比赛内容</strong></p>
+</blockquote>
+<p><strong>主要任务</strong></p>
+<p>This task aims to query an egocentric video based on a category of actions. Specifically, it poses the following request ‘Retrieve all the moments that I do X in the video.’, where ‘X’ comes from a pre-defined taxonomy of action categories, such as ‘interact with someone’ or ‘use phone’. Given an input video and a query action category, the goal is to retrieve all the instances of this action category in the video.</p>
+<p>即：输入一个视频片段和查询动作，输出该动作的起始和结束时间。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://skyimg-1308654057.cos.ap-guangzhou.myqcloud.com/img/20250428235535155.webp" alt="image-20250428235527898"></p>
+<blockquote>
+<p><strong>比赛举办机构</strong></p>
+</blockquote>
+<p>Ego4D</p></div><div class="tab-pane" id="first-unique-name-2"><p>2023冠军代码（目前榜单第四）：<a class="link" target="_blank" rel="noopener" href="https://github.com/JonnyS1226/ego4d_asl">https://github.com/JonnyS1226/ego4d_asl<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>2023冠军论文：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.09172">https://arxiv.org/abs/2306.09172<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>2024代码未公开，仓库在：<a class="link" target="_blank" rel="noopener" href="https://github.com/OpenGVLab/EgoVideo">https://github.com/OpenGVLab/EgoVideo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p></div></div></div>
+
+<h3 id="Goal-Step"><a href="#Goal-Step" class="headerlink" title="Goal Step"></a>Goal Step</h3><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">比赛基本信息</a></li><li class="tab"><a class="#first-unique-name-2">BaseLine代码链接</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><blockquote>
+<p><strong>比赛链接</strong></p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://eval.ai/web/challenges/challenge-page/2188/overview">https://eval.ai/web/challenges/challenge-page/2188/overview<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p><strong>比赛内容</strong></p>
+</blockquote>
+<p><strong>主要任务</strong></p>
+<p>There are three tasks of interest in Ego4D Goal-Step (1) Goal/Step localization (2) Online goal/step detection (3) Step grounding. In this challenge, we focus on Step grounding. Given an untrimmed egocentric video, identify the temporal action segment corresponding to a natural language description of the step. Specifically, predict the (start_time, end_time) for a given keystep description.</p>
+<p>即：<strong>focus on Step grounding</strong> ，预测给定的关键步骤的开始和结束时间。</p>
+<blockquote>
+<p><strong>比赛举办机构</strong></p>
+</blockquote>
+<p>Ego4D</p></div><div class="tab-pane" id="first-unique-name-2"><p>暂时没找到</p></div></div></div>
+
+
+
+<h3 id="Ego-Schema"><a href="#Ego-Schema" class="headerlink" title="Ego Schema"></a>Ego Schema</h3><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">比赛基本信息</a></li><li class="tab"><a class="#first-unique-name-2">BaseLine代码链接</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><blockquote>
+<p><strong>比赛链接</strong></p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://eval.ai/web/challenges/challenge-page/2238/overview">https://eval.ai/web/challenges/challenge-page/2238/overview<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p><strong>比赛内容</strong></p>
+</blockquote>
+<p><strong>主要任务</strong></p>
+<p>We introduce EgoSchema, a very long-form video question-answering benchmark to evaluate long video understanding capabilities of modern vision and language systems. Derived from Ego4D, EgoSchema consists of over 5000 human curated multiple choice question answer pairs, spanning over 250 hours of real video data, covering a very broad range of natural human activity and behavior. For each question, EgoSchema requires the correct answer to be selected between five given options based on a three-minute-long video clip. More details at our <a class="link" target="_blank" rel="noopener" href="https://egoschema.github.io/">website<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> and <a class="link" target="_blank" rel="noopener" href="https://github.com/egoschema/egoschema">Github page<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://skyimg-1308654057.cos.ap-guangzhou.myqcloud.com/img/20250429152325731.webp" alt="image-20250429152325635"></p>
+<p>即：给定一个3分钟的视频切片，一个问题和5个选项，从五个选择中选择最正确的选项。</p>
+<blockquote>
+<p><strong>比赛举办机构</strong></p>
+</blockquote>
+<p>Ego4D</p></div><div class="tab-pane" id="first-unique-name-2"><p>2024冠军代码：<a class="link" target="_blank" rel="noopener" href="https://github.com/Hyu-Zhang/HCQA">https://github.com/Hyu-Zhang/HCQA<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>2024冠军论文：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2406.15771">https://arxiv.org/abs/2406.15771<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p></div></div></div>
+
+
+
+<h2 id="Social-Understanding"><a href="#Social-Understanding" class="headerlink" title="Social Understanding"></a>Social Understanding</h2><h3 id="Looking-at-me"><a href="#Looking-at-me" class="headerlink" title="Looking at me"></a>Looking at me</h3><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">比赛基本信息</a></li><li class="tab"><a class="#first-unique-name-2">BaseLine代码链接</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><blockquote>
+<p><strong>比赛链接</strong></p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://eval.ai/web/challenges/challenge-page/1624/overview">https://eval.ai/web/challenges/challenge-page/1624/overview<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p><strong>比赛内容</strong></p>
+</blockquote>
+<p><strong>主要任务</strong></p>
+<p>An egocentric video provides a unique lens for studying social interactions because it captures utterances and nonverbal cues from each participant’s unique view and enables embodied approaches to social understanding. Progress in egocentric social understanding could lead to more capable virtual assistants and social robots. Computational models of social interactions can also provide new tools for diagnosing and treating disorders of socialization and communication such as autism, and could support novel prosthetic technologies for the hearing-impaired.</p>
+<p>While the Ego4D dataset can support such a long-term research agenda, our looking-at-me task focuses on identifying communicative acts that are directed towards the camera-wearer, as distinguished from those directed to other social partners: given a video in which the faces of social partners have been localized and identified, classify whether each visible face is looking at the camera wearer.</p>
+<p>即：给定地面状况（用唯一ID跨帧追踪每个人脸，对于每个可见的人，标注了看向摄像头佩戴者的时间段），输出对于每一帧是否看向了摄像头的佩戴者（二进制）。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://skyimg-1308654057.cos.ap-guangzhou.myqcloud.com/img/20250429153426313.webp" alt="image-20250429153426224"></p>
+<blockquote>
+<p><strong>比赛举办机构</strong></p>
+</blockquote>
+<p>Ego4D</p></div><div class="tab-pane" id="first-unique-name-2"><p>暂时没找到</p></div></div></div>
+
+<h3 id="Talking-to-me"><a href="#Talking-to-me" class="headerlink" title="Talking to me"></a>Talking to me</h3><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">比赛基本信息</a></li><li class="tab"><a class="#first-unique-name-2">BaseLine代码链接</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><blockquote>
+<p><strong>比赛链接</strong></p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://eval.ai/web/challenges/challenge-page/2238/overview">https://eval.ai/web/challenges/challenge-page/2238/overview<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p><strong>比赛内容</strong></p>
+</blockquote>
+<p><strong>主要任务</strong></p>
+<p>An egocentric video provides a unique lens for studying social interactions because it captures utterances and nonverbal cues from each participant’s unique view and enables embodied approaches to social understanding. Progress in egocentric social understanding could lead to more capable virtual assistants and social robots. Computational models of social interactions can also provide new tools for diagnosing and treating disorders of socialization and communication such as autism, and could support novel prosthetic technologies for the hearing-impaired.</p>
+<p>While the Ego4D dataset can support such a long-term research agenda, our initial Social benchmark focuses on multimodal understanding of conversational interactions via attention and speech. Specifically, we focus on identifying communicative acts that are directed towards the camera-wearer, as distinguished from those directed to other social partners: Talking to me (TTM): given a video and audio segment with the same tracked faces and an additional label that identifies speaker status, classify whether each visible face is talking to the camera wearer. he TTM task is defined as a frame-level prediction y, which stands in contrast to audio analysis tasks where labels are often assigned at the level of audio frames or segments. A desired model must be able to make a consolidated decision based on the video and audio cues over the time course of an utterance. For example, if the speaker turns their head to the side momentarily while speaking to the camera-wearer, then a frame where the speaker is looking away would have y = 1.</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://skyimg-1308654057.cos.ap-guangzhou.myqcloud.com/img/20250429154316685.webp" alt="image-20250429154316596"></p>
+<p>即：给定视频和音频片段且该说话者已被标注为正在说话，输出对于每一帧是否对摄像头佩戴者说话（二进制）。</p>
+<blockquote>
+<p><strong>比赛举办机构</strong></p>
+</blockquote>
+<p>Ego4D</p></div><div class="tab-pane" id="first-unique-name-2"><p>2023冠军代码：<a class="link" target="_blank" rel="noopener" href="https://github.com/hsi-che-lin/Ego4D-QuAVF-TTM-CVPR23">https://github.com/hsi-che-lin/Ego4D-QuAVF-TTM-CVPR23<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>2023冠军论文：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.17404">https://arxiv.org/abs/2306.17404<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p></div></div></div>
+
+
+
+<h3 id="Forecasting"><a href="#Forecasting" class="headerlink" title="Forecasting"></a>Forecasting</h3>
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> CVPR相关比赛调研</li>
+        <li><strong>Author:</strong> Skywalker</li>
+        <li><strong>Created at
+                :</strong> 2025-04-28 23:08:04</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2025-04-29 15:55:14
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://skywalker.github.io/2025/04/28/比赛调研/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/cvpr/">#cvpr</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2025/04/26/AN-IMAGE-IS-WORTH-16X16-WORDS/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">精读——AN IMAGE IS WORTH 16X16 WORDS:TRANSFORMERS FOR IMAGE RECOGNITION ATSCALE</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://vercelblog-sepia.vercel.app',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">CVPR相关比赛调研</div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Ego4d"><span class="nav-text">Ego4d</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Episodic-memory%EF%BC%88%E6%83%85%E6%99%AF%E8%AE%B0%E5%BF%86%EF%BC%89"><span class="nav-text">Episodic memory（情景记忆）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Moments-queries-MQ"><span class="nav-text">Moments queries (MQ)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Goal-Step"><span class="nav-text">Goal Step</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ego-Schema"><span class="nav-text">Ego Schema</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Social-Understanding"><span class="nav-text">Social Understanding</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Looking-at-me"><span class="nav-text">Looking at me</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Talking-to-me"><span class="nav-text">Talking to me</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Forecasting"><span class="nav-text">Forecasting</span></a></li></ol></li></ol></li></ol>
+
+	</div>
+</div>
+	</div>
+	
 </div>
 			</div>
 
@@ -531,6 +911,26 @@
 		</div>
 	</div>
 
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
 	
 
 	<div class="right-side-tools-container">
@@ -634,6 +1034,7 @@
         containers: ["#swup"],
     });
 </script>
+
 
 
 
