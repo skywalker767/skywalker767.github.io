@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-04-28T15:08:04.000Z">
-<meta property="article:modified_time" content="2025-04-29T07:55:14.549Z">
+<meta property="article:modified_time" content="2025-04-30T09:17:19.420Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="cvpr">
 <meta name="twitter:card" content="summary">
@@ -549,8 +549,8 @@ mjx-container[display="true"] + br {
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-04-29 15:55:14</span>
-            <span class="mobile">2025-04-29 15:55:14</span>
+            <span class="desktop">2025-04-30 17:17:19</span>
+            <span class="mobile">2025-04-30 17:17:19</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -588,12 +588,12 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.1k Words</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2k Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>5 Mins</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>10 Mins</span>
         </span>
     
     
@@ -703,7 +703,85 @@ mjx-container[display="true"] + br {
 
 
 
-<h3 id="Forecasting"><a href="#Forecasting" class="headerlink" title="Forecasting"></a>Forecasting</h3>
+<h2 id="Forecasting"><a href="#Forecasting" class="headerlink" title="Forecasting"></a>Forecasting</h2><h3 id="Short-Term-object-interaction-anticipation"><a href="#Short-Term-object-interaction-anticipation" class="headerlink" title="Short Term object interaction anticipation"></a>Short Term object interaction anticipation</h3><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">比赛基本信息</a></li><li class="tab"><a class="#first-unique-name-2">BaseLine代码链接</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><blockquote>
+<p><strong>比赛链接</strong></p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://eval.ai/web/challenges/challenge-page/1623/overview">https://eval.ai/web/challenges/challenge-page/1623/overview<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p><strong>比赛内容</strong></p>
+</blockquote>
+<p><strong>主要任务</strong></p>
+<p>This task aims to predict the next human-object interaction happening after a given timestamp. Given an input video, the goal is to anticipate:</p>
+<ul>
+<li>The spatial positions of the active objects, among those which are in the scene (e.g., bounding boxes around the objects). We consider as the next active object, the next object which will be touched by the user (either with their hands or with a tool) to initiate an interaction;</li>
+<li>The category of each of the detected next active objects (e.g., “knife”, “tomato”);</li>
+<li>How each active object will be used, i.e., what action will be performed on the active objects (e.g., “take”, “cut”);</li>
+<li>When the interaction with each object will begin (e.g., “in 1 second”, “in 0.25 seconds”). This is the time to the first frame in which the user touches the active object (time to contact). This prediction can be useful in scenarios which involve human-machine collaboration. For instance, an assistive system could give an alert if a short time to action is predicted for a potentially dangerous object to touch.</li>
+</ul>
+<p>In this task, models are required to make predictions at a specific timestamp, rather than densely throughout the video. The model is allowed to process the video up to a given frame t, at which point it must anticipate the next active objects, and how they will take part in an interaction in Δ seconds, where Δ is unknown. The model can make zero or more predictions. Each prediction indicates the next active object in terms of a noun class, a bounding box, a verb indicating the future action, as well as the time to contact, which estimates how many seconds in the future the interaction with the object will begin. Each prediction also comprises a confidence score used for evaluation.</p>
+<p>即：给定一段未裁剪的视频和时间戳，模型要处理视频直到第t帧数，并预测在第t帧后发生的人-物交互（交互的物品，交互的动作，交互距离t的时间）。</p>
+<blockquote>
+<p><strong>比赛举办机构</strong></p>
+</blockquote>
+<p>Ego4D</p></div><div class="tab-pane" id="first-unique-name-2"><p>2024代码（排名第三）：<a class="link" target="_blank" rel="noopener" href="https://github.com/KeenyJin/SOIA-DOD">https://github.com/KeenyJin/SOIA-DOD<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://skyimg-1308654057.cos.ap-guangzhou.myqcloud.com/img/20250429160358171.webp" alt="image-20250429160358087"></p>
+<p>此代码论文：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2407.05713">https://arxiv.org/abs/2407.05713<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p></div></div></div>
+
+
+
+<h3 id="Long-term-activity-prediction"><a href="#Long-term-activity-prediction" class="headerlink" title="Long-term activity prediction"></a>Long-term activity prediction</h3><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">比赛基本信息</a></li><li class="tab"><a class="#first-unique-name-2">BaseLine代码链接</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><blockquote>
+<p><strong>比赛链接</strong></p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://eval.ai/web/challenges/challenge-page/1598/overview">https://eval.ai/web/challenges/challenge-page/1598/overview<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p><strong>比赛内容</strong></p>
+</blockquote>
+<p><strong>主要任务</strong></p>
+<p>This task aims to predict the next Z future actions after a given action. Given an input video up to a particular timestep (corresponding to the last visible action), the goal is to predict a list of action classes [(verb1, noun1), (verb2, noun2) … (verbZ, nounZ)] that follow it. The model should generate K such lists to account for variations in action sequences. The evaluation metric will consider the best of these K. For this task, we set Z=20 and K=5.</p>
+<p>即：给一个未裁剪的视频V和最后一个可见动作，模型需要预测从该时间点后发生的未来连续Z个动作，并以动词-名词对输出。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="https://skyimg-1308654057.cos.ap-guangzhou.myqcloud.com/img/20250429161037912.webp" alt="image-20250429161037822"></p>
+<blockquote>
+<p><strong>比赛举办机构</strong></p>
+</blockquote>
+<p>Ego4D</p></div><div class="tab-pane" id="first-unique-name-2"><p>当前榜单第四代码：<a class="link" target="_blank" rel="noopener" href="https://github.com/zeyun-zhong/querymamba">https://github.com/zeyun-zhong/querymamba<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>当前榜单第四论文：<a class="link" target="_blank" rel="noopener" href="https://arxiv.org/abs/2407.04184">https://arxiv.org/abs/2407.04184<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p></div></div></div>
+
+
+
+
+
+<h1 id="Object-Instance-Detection-Challenge-CVPR2025"><a href="#Object-Instance-Detection-Challenge-CVPR2025" class="headerlink" title="Object Instance Detection Challenge @ CVPR2025"></a>Object Instance Detection Challenge @ CVPR2025</h1><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">比赛基本信息</a></li><li class="tab"><a class="#first-unique-name-2">BaseLine代码链接</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><blockquote>
+<p><strong>比赛链接</strong></p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://eval.ai/web/challenges/challenge-page/2478/overview">https://eval.ai/web/challenges/challenge-page/2478/overview<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p><strong>比赛内容</strong></p>
+</blockquote>
+<p><strong>主要任务</strong></p>
+<p>Instance Detection (InsDet) is a practically important task in robotics applications, e.g., elderly-assistant robots need to fetch specific items from a cluttered kitchen, micro-fulfillment robots for the retail need to pick items from mixed boxes or shelves. Different from Object Detection (ObjDet) detecting all objects belonging to some predefined classes, InsDet aims to detect specific object instances defined by some examples capturing the instance from multiple views.</p>
+<p>即：从多个视角捕获特定实例。</p>
+<blockquote>
+<p><strong>比赛举办机构</strong></p>
+</blockquote>
+<p>cvpr</p></div><div class="tab-pane" id="first-unique-name-2"><p>代码仓库：<a class="link" target="_blank" rel="noopener" href="https://github.com/IRVLUTD/NIDS-Net?tab=readme-ov-file">https://github.com/IRVLUTD/NIDS-Net?tab=readme-ov-file<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p></div></div></div>
+
+
+
+<h1 id="Object-Instance-Detection-Challenge-CVPR2025-1"><a href="#Object-Instance-Detection-Challenge-CVPR2025-1" class="headerlink" title="Object Instance Detection Challenge @ CVPR2025"></a>Object Instance Detection Challenge @ CVPR2025</h1><div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">比赛基本信息</a></li><li class="tab"><a class="#first-unique-name-2">BaseLine代码链接</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><blockquote>
+<p><strong>比赛链接</strong></p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://eval.ai/web/challenges/challenge-page/2478/overview">https://eval.ai/web/challenges/challenge-page/2478/overview<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<blockquote>
+<p><strong>比赛内容</strong></p>
+</blockquote>
+<p><strong>主要任务</strong></p>
+<p>Instance Detection (InsDet) is a practically important task in robotics applications, e.g., elderly-assistant robots need to fetch specific items from a cluttered kitchen, micro-fulfillment robots for the retail need to pick items from mixed boxes or shelves. Different from Object Detection (ObjDet) detecting all objects belonging to some predefined classes, InsDet aims to detect specific object instances defined by some examples capturing the instance from multiple views.</p>
+<p>即：从多个视角捕获特定实例。</p>
+<blockquote>
+<p><strong>比赛举办机构</strong></p>
+</blockquote>
+<p>cvpr</p></div><div class="tab-pane" id="first-unique-name-2"><p>代码仓库：<a class="link" target="_blank" rel="noopener" href="https://github.com/IRVLUTD/NIDS-Net?tab=readme-ov-file">https://github.com/IRVLUTD/NIDS-Net?tab=readme-ov-file<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p></div></div></div>
+
 		</div>
 
 		
@@ -717,7 +795,7 @@ mjx-container[display="true"] + br {
         
             <li>
                 <strong>Updated at
-                    :</strong> 2025-04-29 15:55:14
+                    :</strong> 2025-04-30 17:17:19
             </li>
         
         <li>
@@ -823,7 +901,7 @@ mjx-container[display="true"] + br {
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
 		<div class="page-title">CVPR相关比赛调研</div>
-		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Ego4d"><span class="nav-text">Ego4d</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Episodic-memory%EF%BC%88%E6%83%85%E6%99%AF%E8%AE%B0%E5%BF%86%EF%BC%89"><span class="nav-text">Episodic memory（情景记忆）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Moments-queries-MQ"><span class="nav-text">Moments queries (MQ)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Goal-Step"><span class="nav-text">Goal Step</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ego-Schema"><span class="nav-text">Ego Schema</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Social-Understanding"><span class="nav-text">Social Understanding</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Looking-at-me"><span class="nav-text">Looking at me</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Talking-to-me"><span class="nav-text">Talking to me</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Forecasting"><span class="nav-text">Forecasting</span></a></li></ol></li></ol></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Ego4d"><span class="nav-text">Ego4d</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Episodic-memory%EF%BC%88%E6%83%85%E6%99%AF%E8%AE%B0%E5%BF%86%EF%BC%89"><span class="nav-text">Episodic memory（情景记忆）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Moments-queries-MQ"><span class="nav-text">Moments queries (MQ)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Goal-Step"><span class="nav-text">Goal Step</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ego-Schema"><span class="nav-text">Ego Schema</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Social-Understanding"><span class="nav-text">Social Understanding</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Looking-at-me"><span class="nav-text">Looking at me</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Talking-to-me"><span class="nav-text">Talking to me</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Forecasting"><span class="nav-text">Forecasting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Short-Term-object-interaction-anticipation"><span class="nav-text">Short Term object interaction anticipation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Long-term-activity-prediction"><span class="nav-text">Long-term activity prediction</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object-Instance-Detection-Challenge-CVPR2025"><span class="nav-text">Object Instance Detection Challenge @ CVPR2025</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Object-Instance-Detection-Challenge-CVPR2025-1"><span class="nav-text">Object Instance Detection Challenge @ CVPR2025</span></a></li></ol>
 
 	</div>
 </div>
@@ -854,7 +932,7 @@ mjx-container[display="true"] + br {
                     </span>
                     
                         <span>
-                            2.1k words in total
+                            3k words in total
                         </span>
                     
                 </p>
